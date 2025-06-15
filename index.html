@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItGuardian</title>
+
+<!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!--relacionando con la carpeta estilos css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--inicia Header section-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.jpg" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">inicio</a>
+            <a href="#about">sobre nosotros</a>
+            <a href="#menu">suscripciones mensuales</a>
+        <!--<a href="#products"></a>-->
+            <a href="#review">reseñas</a>
+            <a href="#contact">contacto</a>
+        <!--  <a href="#blogs">blogs</a>-->
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="buscar aqui...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    <!--
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/logo2.jpg" alt="">
+                <div class="content">
+                    <h3>mensual</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/logo2.jpg" alt="">
+                <div class="content">
+                    <h3>seis meses</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/logo2.jpg" alt="">
+                <div class="content">
+                    <h3>anual</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/logo2.jpg" alt="">
+                <div class="content">
+                    <h3>de por vida</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>-->
+            
+</header>
+<!--termina Header section-->
+
+<!--Empieza Home section-->
+<section class="home" id="home">
+    <div class="content">
+        <h3><span>IT GUARDIAN</span> <br>"Tu seguridad digital, en manos expertas"</h3>
+        <p>IT Guardian es una plataforma SaaS (Software como Servicio) de seguridad
+        informática que proporciona escaneos automáticos de vulnerabilidades web,
+        generación de informes comprensibles en español, y recomendaciones prácticas
+        orientadas a prevenir ciberataques, cumplir con normativas mexicanas y mejorar la
+        confianza digital de los negocios.</p>
+        <a href="#contact" class="btn">Contactanos</a>
+    </div>
+</section>
+<!--Termina Home seccion-->
+
+
+<!--Empieza Nosotros seccion-->
+
+<section class="about" id="about">
+    <h1 class="heading"><span>sobre</span> Nosotros</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/nosotros.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Por qué elegir IT Guardian?</h3>
+            <p>En el mercado mexicano no existe una plataforma que combine automatización real, informes en español, y una estructura de precios pensada exclusivamente para PYMES. <br>
+            Lo que nos diferencia es simple pero poderoso: <br>
+            🔒 Automatización Inteligente sin Curva de Aprendizaje <br>
+            📈 Reportes claros en español que sí entiendes <br>
+            💰 Precios realistas adaptados al tamaño de tu negocio <br>
+            🧩 Configuración personalizada sin necesidad de consultores externos
+            Mientras otros ofrecen herramientas genéricas <br>
+            <span>"ItGuardian se enfoca en tu realidad."</span></p>
+        </div>
+    </div>
+</section>
+
+<!--Termina Nosotros seccion-->
+
+
+
+<!--Empieza seccion menu-->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading">suscripciones<span> mensuales</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/plan4.png"alt="">
+            <h3>Plan Gratuito</h3>
+            <div class="price">$0</div>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)  ">&times;</span>
+                    <h4>Detalles del Plan</h4>
+                    <br>
+                    <ul>
+                        <li>1 escaneo básico mensual</li>
+                        <li>No incluye detalles ténicos ni seguimiento personalizado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/plan2.png" alt="">
+            <h3>Plan Básico</h3>
+            <div class="price">$300 MXN</div>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)">&times;</span>
+                    <h4>Detalles del Plan</h4>
+                    <br>
+                    <ul>
+                        <li>Hasta 5 escaneos al mes</li>
+                        <li>Informe pripritario con recomendaciones básicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/plan1.png" alt="">
+            <h3>Plan Avanzado</h3>
+            <div class="price">$800 MXN</div>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)">&times;</span>
+                    <h4>Detalles del Plan</h4>
+                    <br>
+                    <ul>
+                        <li>Monitoreo continuo automatizado</li>
+                        <li>Integración con canales como slack y whatsapp para alertas en tiempo real</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/plan3.png" alt="">
+            <h3>Plan Agencia</h3>
+            <div class="price">$2500 MXN</div>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)">&times;</span>
+                    <h4>Detalles del Plan</h4>
+                    <br>
+                    <ul>
+                        <li>Plataforma con marca blanca(white-label) para reventa de servicios a clientes finales</li>
+                        <li>Ideal para agencias de mantenimiento web</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/plan_pdf.png" alt="">
+            <h3>Talleres y certificaciones sobre ciberseguridad en linea</h3>
+            <div class="price">$500-$10000</div>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)  ">&times;</span>
+                    <h4>Detalles</h4>
+                    <br>
+                    <ul>
+                        <li>Se tiene convenio con otras empresas para obtener certificaciones en ciberseguridad para nuestros clientes</li>
+                        <li>Comunidad activa de todos nuestros miembros</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/plan_mante.png" alt="">
+            <h3>Servicios de remediación y correción de vulnerabilidades</h3>
+           <br>
+            <a href="#menu" class="btn" onclick="mostrarPopup(this)">Saber más</a>
+
+            <div class="popup-info">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="cerrarPopup(this)  ">&times;</span>
+                    <h4>Detalles</h4>
+                    <br>
+                    <ul>
+                        <li>IT Guaardian puede conectar a los clientes con freelancers especializados en reparaciones de vulnerabilidades en software</li>
+                        <li>Se cobra una comisión por intermediación del 15% al 20% del costo del servicio prestado </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!--Termina seccion menu-->
+
+<section class="products" id="products">
+
+    <div class="empresa">
+        <img src="images/b2b2c.png" alt="">
+    </div>
+   
+</section>
+
+
+
+
+<section class="review" id="review">
+    <h1 class="heading"> reseña <span>clientes</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/persona1.png" class="user"  alt="quote">
+            <p>"Entiendo los reportes sin ser técnico. Es raro encontrar una herramienta tan accesible y profesional."<br>Director de operaciones de tienda online</p>
+            <h3>alejandro estrada</h3>
+            <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="images/persona2.png"  class="user"   alt="quote">
+            <p>“Finalmente un sistema en español que te mantiene seguro, pensada para negocios como el mío. Sencilla, clara y efectiva.” <br> Dueña de cafeteria con página web <br>
+            <h3>Laura M. </h3>
+            <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="images/persona3.png" class="user"   alt="quote">
+            <p>"IT Guardian nos ayudó a automatizar procesos sin gastar una fortuna. Es justo lo que necesitábamos."<br> Consultor financiero</p>
+            <h3>luis arriaga</h3>
+            <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+    </div>
+
+</section>
+
+<!--seccion contacto inicia-->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>cont</span>acto</h1>
+
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.8576464162325!2d-96.85684429999999!3d19.5047594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db31fdaf9ddd03%3A0x6a88edc38275f5b0!2sUniversidad%20Euro%20Hispanoamericana!5e0!3m2!1ses!2smx!4v1749967148694!5m2!1ses!2smx"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+            <h2>Rellenar datos para asesoria gratuita: </h2>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="nombre">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="número">
+            </div>
+
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+    </div>
+</section>
+<!--seccion contacto termina-->
+
+<!--seccion blog inicia-->
+<section class="blogs" id="blogs">
+    <h2 class="heading">Información <span>adicional</span></h2>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/presupuesto.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">¿Qué necesito para operar IT Guardian durante los primeros 6 meses?</a>
+                <p>Para lanzar y consolidar IT Guardian como una solución SaaS profesional, formal y escalable, se requiere una inversión estratégica total de $118,300 MXN.
+                    <br>
+                Esta cifra cubre todo lo necesario para operar con éxito durante medio año: desde la constitución legal, desarrollo de la plataforma, hosting y herramientas clave, hasta publicidad, soporte técnico y gestión contable.</p>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/logo19.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">IT Guardian Antes vs Después</a>
+                <p>Antes: Una idea bien planteada pero limitada a ofrecer "lo justo". <br>
+                Ahora: Un producto SaaS profesional, escalable y competitivo que puede crecer con el mercado e integrarse a ecosistemas digitales <br>
+                Ya no es solo un servicio de escaneo; es una plataforma de seguridad digital con visión de negocio.
+                Con las mejoras incorporadas, está preparada no solo para proteger, sino para educar, fidelizar y liderar el mercado de ciberseguridad para PYMES en México.</p>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/segurity.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">¿Cómo es que IT Guardian me protege?</a>
+                <p>IT Guardian aplica la ciberseguridad de forma efectiva al realizar escaneos automatizados y constantes que detectan vulnerabilidades reales como inyecciones SQL, XSS o directorios expuestos. A diferencia de las auditorías tradicionales, ofrece informes claros en español con explicaciones comprensibles y recomendaciones prácticas, incluso conectando con expertos para remediación directa si es necesario. Además, ayuda a cumplir con normativas mexicanas como la LFPDPPP y la NOM-151-SCFI, protegiendo tanto a nivel técnico como legal. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--seccion blog termina-->
+
+<!--seccion footer inicia-->
+<section class="footer">
+    
+    <div class="shar">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+    <div class="credit">creado por <span>Pat Absalón</span>| todos los derechos reservados</div>
+</section>
+
+<!--seccion footer termina-->
+
+
+
+
+
+<!--Relacionando a la carpeta js-->
+   <script  src="js/script.js"></script>
+   
+    
+</body>
+</html>
